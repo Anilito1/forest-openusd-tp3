@@ -330,7 +330,43 @@ def build_bird_nest():
     save(stage, path)
 
 
-# ----- 12. Ground -----
+# ----- 12. DeadTree -----
+def build_dead_tree():
+    stage, root, path = new_stage("DeadTree.usda", "DeadTree")
+    UsdGeom.Scope.Define(stage, root + "/Materials")
+    make_material(stage, root + "/Materials/Mat_DeadWood", (0.42, 0.36, 0.28), 0.95)
+    make_cylinder(stage, root + "/Trunk", 0.20, 2.6, segs=12)
+    bind(stage, root + "/Trunk", root + "/Materials/Mat_DeadWood")
+    # 3 branches mortes
+    for i, (rz, off_y, off_x) in enumerate([(35, 1.6, 0.6), (-30, 1.9, -0.5), (50, 2.2, 0.4)]):
+        b = make_cylinder(stage, root + f"/Branch_{i}", 0.05, 0.9, segs=8,
+                          translate=(off_x, off_y, 0))
+        b.AddRotateZOp().Set(rz)
+        bind(stage, root + f"/Branch_{i}", root + "/Materials/Mat_DeadWood")
+    save(stage, path)
+
+
+# ----- 13. Mushroom -----
+def build_mushroom():
+    stage, root, path = new_stage("Mushroom.usda", "Mushroom")
+    UsdGeom.Scope.Define(stage, root + "/Materials")
+    make_material(stage, root + "/Materials/Mat_Stem", (0.95, 0.92, 0.85), 0.50)
+    make_material(stage, root + "/Materials/Mat_Cap", (0.85, 0.18, 0.12), 0.45)
+    make_material(stage, root + "/Materials/Mat_Spots", (0.98, 0.96, 0.92), 0.50)
+    make_cylinder(stage, root + "/Stem", 0.05, 0.18, segs=10)
+    bind(stage, root + "/Stem", root + "/Materials/Mat_Stem")
+    cap = make_sphere(stage, root + "/Cap", 0.14, lat=8, lon=12, translate=(0, 0.20, 0))
+    cap.AddScaleOp().Set(Gf.Vec3f(1.0, 0.65, 1.0))
+    bind(stage, root + "/Cap", root + "/Materials/Mat_Cap")
+    # 4 points blancs
+    for i, off in enumerate([(0.07, 0.24, 0.04), (-0.05, 0.25, 0.06),
+                              (0.04, 0.25, -0.07), (-0.08, 0.23, -0.03)]):
+        make_sphere(stage, root + f"/Spot_{i}", 0.025, lat=4, lon=6, translate=off)
+        bind(stage, root + f"/Spot_{i}", root + "/Materials/Mat_Spots")
+    save(stage, path)
+
+
+# ----- 14. Ground -----
 def build_ground():
     stage, root, path = new_stage("Ground.usda", "Ground")
     UsdGeom.Scope.Define(stage, root + "/Materials")
@@ -355,6 +391,8 @@ def main():
     build_fallen_log()
     build_moss()
     build_bird_nest()
+    build_dead_tree()
+    build_mushroom()
     build_ground()
     print("Done.")
 
