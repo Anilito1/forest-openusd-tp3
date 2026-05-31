@@ -1,0 +1,1709 @@
+#usda 1.0
+(
+    defaultPrim = "Forest"
+    doc = "TP3 ST2SNE - Scene de foret structuree avec references OpenUSD. Auteur: Anil BRAUN. 3 zones (Dense / Clairiere / Rocheuse) reliees par un chemin sinusoidal. Points d'interet scenarises : patriarche, cairn, hollow log, fairy ring, bird nest perche. Composition par references, jamais par duplication ; overrides de couleur sur feuillages et buissons fleuris."
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Forest"
+{
+    def Xform "Ground" (
+        prepend references = @./assets/Ground.usda@</Ground>
+    )
+    {
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Xform "Path"
+    {
+        def Xform "Stone_00" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 180.90567
+            float3 xformOp:scale = (0.5539015, 0.5539015, 0.5539015)
+            double3 xformOp:translate = (-17, 0, 0.33166471136218784)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_01" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 36.949265
+            float3 xformOp:scale = (0.4586839, 0.4586839, 0.4586839)
+            double3 xformOp:translate = (-14.733333333333334, 0, 1.8387732644495935)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_02" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 200.36125
+            float3 xformOp:scale = (0.6435132, 0.6435132, 0.6435132)
+            double3 xformOp:translate = (-12.466666666666667, 0, 2.7009955190554935)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_03" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 262.99405
+            float3 xformOp:scale = (0.63847804, 0.63847804, 0.63847804)
+            double3 xformOp:translate = (-10.2, 0, 3.434466384841593)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_04" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 211.1475
+            float3 xformOp:scale = (0.46417823, 0.46417823, 0.46417823)
+            double3 xformOp:translate = (-7.933333333333334, 0, 3.99810354059174)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_05" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 39.865154
+            float3 xformOp:scale = (0.65453124, 0.65453124, 0.65453124)
+            double3 xformOp:translate = (-5.666666666666668, 0, 4.053295026667356)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_06" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 293.31458
+            float3 xformOp:scale = (0.6111088, 0.6111088, 0.6111088)
+            double3 xformOp:translate = (-3.3999999999999986, 0, 3.7453933806526813)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_07" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 75.68088
+            float3 xformOp:scale = (0.46799934, 0.46799934, 0.46799934)
+            double3 xformOp:translate = (-1.1333333333333329, 0, 3.305121913806639)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_08" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 334.55423
+            float3 xformOp:scale = (0.65069485, 0.65069485, 0.65069485)
+            double3 xformOp:translate = (1.1333333333333329, 0, 2.6192473210471023)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_09" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 184.89151
+            float3 xformOp:scale = (0.41018558, 0.41018558, 0.41018558)
+            double3 xformOp:translate = (3.3999999999999986, 0, 1.5850554989403136)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_10" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 200.68219
+            float3 xformOp:scale = (0.48140022, 0.48140022, 0.48140022)
+            double3 xformOp:translate = (5.666666666666664, 0, 0.09467483550713937)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_11" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 315.53094
+            float3 xformOp:scale = (0.61731195, 0.61731195, 0.61731195)
+            double3 xformOp:translate = (7.93333333333333, 0, -1.0227961171629063)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_12" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 8.906149
+            float3 xformOp:scale = (0.61958456, 0.61958456, 0.61958456)
+            double3 xformOp:translate = (10.200000000000003, 0, -2.0512825794759637)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_13" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 151.9983
+            float3 xformOp:scale = (0.5165952, 0.5165952, 0.5165952)
+            double3 xformOp:translate = (12.466666666666669, 0, -3.064051766969805)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_14" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 179.44383
+            float3 xformOp:scale = (0.42342782, 0.42342782, 0.42342782)
+            double3 xformOp:translate = (14.733333333333334, 0, -3.5969861753504295)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Stone_15" (
+            customData = {
+                string role = "path_marker"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 270.05286
+            float3 xformOp:scale = (0.58305454, 0.58305454, 0.58305454)
+            double3 xformOp:translate = (17, 0, -3.9626000711485485)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+    }
+
+    def Xform "Zone_Dense"
+    {
+        def Xform "Patriarch_Oak" (
+            customData = {
+                string age = "ancient"
+                string role = "patriarch"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 176.77106
+            float xformOp:rotateZ = 2.5005279
+            float3 xformOp:scale = (1.85, 1.85, 1.85)
+            double3 xformOp:translate = (-12.5, 0, -1)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_00" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 186.4754
+            float xformOp:rotateZ = -2.8477433
+            float3 xformOp:scale = (0.8622624, 0.8622624, 0.8622624)
+            double3 xformOp:translate = (-4.180270077912397, 0, -0.49944081670950524)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_01" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 253.67854
+            float xformOp:rotateZ = 2.320948
+            float3 xformOp:scale = (0.8012882, 0.8012882, 0.8012882)
+            double3 xformOp:translate = (-16.936018369420506, 0, -10.826695031632438)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_02" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 318.93164
+            float xformOp:rotateZ = 0.76002306
+            float3 xformOp:scale = (0.97839814, 0.97839814, 0.97839814)
+            double3 xformOp:translate = (-11.286190165960056, 0, -6.505745557016952)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_03" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 355.4012
+            float xformOp:rotateZ = 0.2737936
+            float3 xformOp:scale = (1.029898, 1.029898, 1.029898)
+            double3 xformOp:translate = (-11.48950341766795, 0, 10.307152562073835)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_04" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 287.9287
+            float xformOp:rotateZ = 0.011397677
+            float3 xformOp:scale = (0.98944646, 0.98944646, 0.98944646)
+            double3 xformOp:translate = (-8.283937096808286, 0, -4.6169452879163275)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_05" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 11.919335
+            float xformOp:rotateZ = 0.93385625
+            float3 xformOp:scale = (1.0486366, 1.0486366, 1.0486366)
+            double3 xformOp:translate = (-14.290013690967323, 0, -5.543137548695168)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_06" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 290.86533
+            float xformOp:rotateZ = 0.34702802
+            float3 xformOp:scale = (1.2036331, 1.2036331, 1.2036331)
+            double3 xformOp:translate = (-10.819731501733859, 0, 7.828164249150241)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_07" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 330.05222
+            float xformOp:rotateZ = -2.409756
+            float3 xformOp:scale = (1.0946666, 1.0946666, 1.0946666)
+            double3 xformOp:translate = (-5.697553242436749, 0, -4.40022943180998)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_08" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 163.05145
+            float xformOp:rotateZ = 2.7916093
+            float3 xformOp:scale = (1.2336339, 1.2336339, 1.2336339)
+            double3 xformOp:translate = (-6.438655500147391, 0, 0.3641599879558939)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_09" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 179.43147
+            float xformOp:rotateZ = -2.4200246
+            float3 xformOp:scale = (1.1237756, 1.1237756, 1.1237756)
+            double3 xformOp:translate = (-17.97127751725337, 0, -5.604812639368116)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_10" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 89.22154
+            float xformOp:rotateZ = 0.726448
+            float3 xformOp:scale = (1.1259274, 1.1259274, 1.1259274)
+            double3 xformOp:translate = (-17.670950936063086, 0, 7.050494527600712)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_11" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 112.839386
+            float xformOp:rotateZ = 0.49839264
+            float3 xformOp:scale = (1.134764, 1.134764, 1.134764)
+            double3 xformOp:translate = (-8.833464222282096, 0, -8.28573828843872)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_12" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 181.6997
+            float xformOp:rotateZ = -2.4934008
+            float3 xformOp:scale = (1.0842774, 1.0842774, 1.0842774)
+            double3 xformOp:translate = (-3.667560625298451, 0, 9.02385104165311)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_13" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 124.92642
+            float xformOp:rotateZ = -0.8795832
+            float3 xformOp:scale = (1.1347668, 1.1347668, 1.1347668)
+            double3 xformOp:translate = (-4.795667877980074, 0, -10.766991048967872)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_14" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 341.56158
+            float xformOp:rotateZ = 0.42970932
+            float3 xformOp:scale = (1.1524693, 1.1524693, 1.1524693)
+            double3 xformOp:translate = (-13.78331602645434, 0, -9.087051719861687)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Pine_15" (
+            customData = {
+                string species = "pine"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 70.377815
+            float xformOp:rotateZ = 2.5287328
+            float3 xformOp:scale = (0.7726183, 0.7726183, 0.7726183)
+            double3 xformOp:translate = (-17.887864405232197, 0, -2.4202303229297364)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_00" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 316.0141
+            float xformOp:rotateZ = -2.2251613
+            float3 xformOp:scale = (1.0119746, 1.0119746, 1.0119746)
+            double3 xformOp:translate = (-15.983531298179534, 0, 5.062691809886914)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_01" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 303.9749
+            float xformOp:rotateZ = -0.6601714
+            float3 xformOp:scale = (0.9701417, 0.9701417, 0.9701417)
+            double3 xformOp:translate = (-3.6946006849143807, 0, -8.150623680134492)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_02" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 293.81485
+            float xformOp:rotateZ = 2.0872197
+            float3 xformOp:scale = (0.8925339, 0.8925339, 0.8925339)
+            double3 xformOp:translate = (-6.254360494053492, 0, 7.121087957709907)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_03" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 126.70206
+            float xformOp:rotateZ = -2.0594451
+            float3 xformOp:scale = (1.024801, 1.024801, 1.024801)
+            double3 xformOp:translate = (-8.273616649812286, 0, 11.068766896817344)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_04" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 104.77302
+            float xformOp:rotateZ = -1.1123893
+            float3 xformOp:scale = (0.9043433, 0.9043433, 0.9043433)
+            double3 xformOp:translate = (-14.571422864424163, 0, 8.097389649852818)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_05" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 34.72197
+            float xformOp:rotateZ = -2.8621337
+            float3 xformOp:scale = (0.8492081, 0.8492081, 0.8492081)
+            double3 xformOp:translate = (-12.36754787380305, 0, -11.629680265668938)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_06" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 157.22688
+            float xformOp:rotateZ = -2.85802
+            float3 xformOp:scale = (1.0781202, 1.0781202, 1.0781202)
+            double3 xformOp:translate = (-13.298913471981203, 0, 5.64928610000122)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_07" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 287.9435
+            float xformOp:rotateZ = -2.2661085
+            float3 xformOp:scale = (1.1071573, 1.1071573, 1.1071573)
+            double3 xformOp:translate = (-14.367108854397937, 0, 10.998821455684407)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Oak_08" (
+            customData = {
+                string species = "oak"
+                string zone = "dense"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 208.12578
+            float xformOp:rotateZ = -0.86417127
+            float3 xformOp:scale = (0.95364237, 0.95364237, 0.95364237)
+            double3 xformOp:translate = (-8.507202589244704, 0, -11.308939857822047)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Sapling_00" (
+            customData = {
+                string age = "young"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 320.0926
+            float xformOp:rotateZ = 1.7196299
+            float3 xformOp:scale = (0.41331452, 0.41331452, 0.41331452)
+            double3 xformOp:translate = (-9.570729357867158, 0, 2.585002984674782)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Sapling_01" (
+            customData = {
+                string age = "young"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 206.14656
+            float xformOp:rotateZ = 2.7332563
+            float3 xformOp:scale = (0.43387854, 0.43387854, 0.43387854)
+            double3 xformOp:translate = (-9.66584449878912, 0, 5.596985441292727)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Sapling_02" (
+            customData = {
+                string age = "young"
+            }
+            prepend references = @./assets/TreePine.usda@</TreePine>
+        )
+        {
+            float xformOp:rotateY = 323.6084
+            float xformOp:rotateZ = -1.228249
+            float3 xformOp:scale = (0.42105314, 0.42105314, 0.42105314)
+            double3 xformOp:translate = (-9.072781081328909, 0, 4.595901273462385)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Fern_00" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 214.49901
+            float3 xformOp:scale = (0.9946173, 0.9946173, 0.9946173)
+            double3 xformOp:translate = (-5.3512036192853305, 0, 11.386888776262328)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_01" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 287.25464
+            float3 xformOp:scale = (1.1296618, 1.1296618, 1.1296618)
+            double3 xformOp:translate = (-17.75091266764924, 0, 1.4890283102094237)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_02" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 171.5668
+            float3 xformOp:scale = (0.98010206, 0.98010206, 0.98010206)
+            double3 xformOp:translate = (-7.1738762420145274, 0, -2.440756200041495)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_03" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 55.117184
+            float3 xformOp:scale = (0.9092065, 0.9092065, 0.9092065)
+            double3 xformOp:translate = (-9.186504545375035, 0, 0.9787868896662602)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_04" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 187.4927
+            float3 xformOp:scale = (1.1162194, 1.1162194, 1.1162194)
+            double3 xformOp:translate = (-3.467698804005945, 0, 6.061896372191434)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Moss_00" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 93.36302
+            float3 xformOp:scale = (1.3084893, 1.3084893, 1.3084893)
+            double3 xformOp:translate = (-8.658371443318753, 0, -0.6868128911032052)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Moss_01" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 207.45056
+            float3 xformOp:scale = (1.3950838, 1.3950838, 1.3950838)
+            double3 xformOp:translate = (-3.90599747851617, 0, 2.271851362370585)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Moss_02" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 229.09169
+            float3 xformOp:scale = (1.1447345, 1.1447345, 1.1447345)
+            double3 xformOp:translate = (-16.999425954243087, 0, 11.68165297063948)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Moss_03" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 3.9480557
+            float3 xformOp:scale = (0.7133163, 0.7133163, 0.7133163)
+            double3 xformOp:translate = (-17.25639005302473, 0, 10.828546315828383)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Moss_04" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 250.98244
+            float3 xformOp:scale = (1.1824039, 1.1824039, 1.1824039)
+            double3 xformOp:translate = (-15.830592918292306, 0, 2.278551460081715)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+    }
+
+    def Xform "Zone_Clearing"
+    {
+        def Xform "PerimeterTree_00" (
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 121.11826
+            float xformOp:rotateZ = 0.88172257
+            float3 xformOp:scale = (1.1370488, 1.1370488, 1.1370488)
+            double3 xformOp:translate = (-2.1319489143023382, 0, -6.801773758763029)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "PerimeterTree_01" (
+            prepend references = @./assets/TreeBirch.usda@</TreeBirch>
+        )
+        {
+            float xformOp:rotateY = 351.24734
+            float xformOp:rotateZ = 2.2162504
+            float3 xformOp:scale = (1.2625905, 1.2625905, 1.2625905)
+            double3 xformOp:translate = (-2.413017503164193, 0, 6.64050328198972)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "PerimeterTree_02" (
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 116.797745
+            float xformOp:rotateZ = -0.7355443
+            float3 xformOp:scale = (0.93976814, 0.93976814, 0.93976814)
+            double3 xformOp:translate = (8.704537717579726, 0, -6.037688001487547)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "PerimeterTree_03" (
+            prepend references = @./assets/TreeBirch.usda@</TreeBirch>
+        )
+        {
+            float xformOp:rotateY = 285.2442
+            float xformOp:rotateZ = 1.6939971
+            float3 xformOp:scale = (0.9383067, 0.9383067, 0.9383067)
+            double3 xformOp:translate = (8.384977348961502, 0, 6.188390179578744)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "AutumnOak_00" (
+            customData = {
+                string variant = "autumn"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 148.80798
+            float xformOp:rotateZ = -2.7358813
+            float3 xformOp:scale = (0.81409484, 0.81409484, 0.81409484)
+            double3 xformOp:translate = (3, 0, -3.5)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+
+            over "Materials"
+            {
+                over "Mat_Foliage"
+                {
+                    over "Surface"
+                    {
+                        color3f inputs:diffuseColor = (0.85, 0.45, 0.1)
+                    }
+                }
+            }
+        }
+
+        def Xform "AutumnOak_03" (
+            customData = {
+                string variant = "autumn"
+            }
+            prepend references = @./assets/TreeOak.usda@</TreeOak>
+        )
+        {
+            float xformOp:rotateY = 255.2484
+            float xformOp:rotateZ = 0.24225144
+            float3 xformOp:scale = (0.9627375, 0.9627375, 0.9627375)
+            double3 xformOp:translate = (6.5, 0, 3)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+
+            over "Materials"
+            {
+                over "Mat_Foliage"
+                {
+                    over "Surface"
+                    {
+                        color3f inputs:diffuseColor = (0.9, 0.65, 0.15)
+                    }
+                }
+            }
+        }
+
+        def Xform "Flower_bed0_00" (
+            customData = {
+                int bed = 0
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 94.18548
+            float3 xformOp:scale = (0.88001937, 0.88001937, 0.88001937)
+            double3 xformOp:translate = (2.284402073825977, 0, 4.754430168620883)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed0_01" (
+            customData = {
+                int bed = 0
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 0.8031424
+            float3 xformOp:scale = (0.8309699, 0.8309699, 0.8309699)
+            double3 xformOp:translate = (2.4269851645099063, 0, 4.01423207704978)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed0_02" (
+            customData = {
+                int bed = 0
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 255.14478
+            float3 xformOp:scale = (1.2610862, 1.2610862, 1.2610862)
+            double3 xformOp:translate = (2.241454246350588, 0, 4.6286337513960705)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed0_03" (
+            customData = {
+                int bed = 0
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 37.125736
+            float3 xformOp:scale = (1.0675161, 1.0675161, 1.0675161)
+            double3 xformOp:translate = (2.512025710596725, 0, 4.371960119279744)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed0_04" (
+            customData = {
+                int bed = 0
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 104.07133
+            float3 xformOp:scale = (0.76485616, 0.76485616, 0.76485616)
+            double3 xformOp:translate = (1.420813989386437, 0, 4.440967358460642)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed1_00" (
+            customData = {
+                int bed = 1
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 24.052805
+            float3 xformOp:scale = (0.76293796, 0.76293796, 0.76293796)
+            double3 xformOp:translate = (6.082203821437392, 0, -1.869008177688829)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed1_01" (
+            customData = {
+                int bed = 1
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 314.77957
+            float3 xformOp:scale = (1.1324142, 1.1324142, 1.1324142)
+            double3 xformOp:translate = (6.225548443142342, 0, -3.3187055039804205)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed1_02" (
+            customData = {
+                int bed = 1
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 300.22714
+            float3 xformOp:scale = (1.1414554, 1.1414554, 1.1414554)
+            double3 xformOp:translate = (6.446366321279665, 0, -2.3949299456804587)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed1_03" (
+            customData = {
+                int bed = 1
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 147.22336
+            float3 xformOp:scale = (0.922604, 0.922604, 0.922604)
+            double3 xformOp:translate = (6.030415438964832, 0, -3.252881282221609)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed1_04" (
+            customData = {
+                int bed = 1
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 68.46102
+            float3 xformOp:scale = (0.73063827, 0.73063827, 0.73063827)
+            double3 xformOp:translate = (5.685258255827192, 0, -3.1315421916971493)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed1_05" (
+            customData = {
+                int bed = 1
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 335.05344
+            float3 xformOp:scale = (1.0217075, 1.0217075, 1.0217075)
+            double3 xformOp:translate = (5.872647816068557, 0, -2.1877321599468305)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed2_00" (
+            customData = {
+                int bed = 2
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 163.22017
+            float3 xformOp:scale = (1.0444812, 1.0444812, 1.0444812)
+            double3 xformOp:translate = (3.352927687537733, 0, 0.6108644140979294)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed2_01" (
+            customData = {
+                int bed = 2
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 228.94661
+            float3 xformOp:scale = (1.1706544, 1.1706544, 1.1706544)
+            double3 xformOp:translate = (3.698792809857668, 0, 0.08654444896292629)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed2_02" (
+            customData = {
+                int bed = 2
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 286.65308
+            float3 xformOp:scale = (0.95785105, 0.95785105, 0.95785105)
+            double3 xformOp:translate = (3.3376710529713294, 0, 1.1774686140851147)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed2_03" (
+            customData = {
+                int bed = 2
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 188.59085
+            float3 xformOp:scale = (0.79044664, 0.79044664, 0.79044664)
+            double3 xformOp:translate = (3.4173302211723824, 0, 1.1631228892628982)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed2_04" (
+            customData = {
+                int bed = 2
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 248.30104
+            float3 xformOp:scale = (0.7186232, 0.7186232, 0.7186232)
+            double3 xformOp:translate = (3.2034137779437653, 0, 1.1164376078025033)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed2_05" (
+            customData = {
+                int bed = 2
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 27.741432
+            float3 xformOp:scale = (0.934548, 0.934548, 0.934548)
+            double3 xformOp:translate = (3.8799826410260527, 0, 0.7873815970960326)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Flower_bed2_06" (
+            customData = {
+                int bed = 2
+            }
+            prepend references = @./assets/Flower.usda@</Flower>
+        )
+        {
+            float xformOp:rotateY = 132.13663
+            float3 xformOp:scale = (1.1020148, 1.1020148, 1.1020148)
+            double3 xformOp:translate = (4.254589881477849, 0, 0.8826453790625934)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_00" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 167.03395
+            float3 xformOp:scale = (0.863201, 0.863201, 0.863201)
+            double3 xformOp:translate = (3.891654019493015, 0, 2.2764074407659702)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_01" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 53.88081
+            float3 xformOp:scale = (0.9798079, 0.9798079, 0.9798079)
+            double3 xformOp:translate = (6.055770410782851, 0, -4.347806885468538)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_02" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 211.67404
+            float3 xformOp:scale = (0.9334107, 0.9334107, 0.9334107)
+            double3 xformOp:translate = (5.148107946494279, 0, -1.3158547951538946)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_03" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 224.35585
+            float3 xformOp:scale = (0.8285821, 0.8285821, 0.8285821)
+            double3 xformOp:translate = (7.185195369701221, 0, 1.1429098369448134)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_04" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 356.0669
+            float3 xformOp:scale = (0.8617347, 0.8617347, 0.8617347)
+            double3 xformOp:translate = (7.832724490639427, 0, 0.41215584122087456)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_05" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 330.17523
+            float3 xformOp:scale = (0.75155365, 0.75155365, 0.75155365)
+            double3 xformOp:translate = (3.263713991018225, 0, 5.062074962320896)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_00" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 163.54192
+            float3 xformOp:scale = (1.1557655, 1.1557655, 1.1557655)
+            double3 xformOp:translate = (4.6, 0, -4.5)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_01" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 341.55435
+            float3 xformOp:scale = (1.0854844, 1.0854844, 1.0854844)
+            double3 xformOp:translate = (4.2778174593052025, 0, -3.7221825406947975)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_02" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 74.81802
+            float3 xformOp:scale = (0.8494184, 0.8494184, 0.8494184)
+            double3 xformOp:translate = (3.5, 0, -3.4)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_03" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 348.34552
+            float3 xformOp:scale = (1.1288432, 1.1288432, 1.1288432)
+            double3 xformOp:translate = (2.7221825406947975, 0, -3.7221825406947975)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_04" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 25.862967
+            float3 xformOp:scale = (0.9264836, 0.9264836, 0.9264836)
+            double3 xformOp:translate = (2.4, 0, -4.5)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_05" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 107.51108
+            float3 xformOp:scale = (1.188558, 1.188558, 1.188558)
+            double3 xformOp:translate = (2.7221825406947975, 0, -5.2778174593052025)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_06" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 252.74385
+            float3 xformOp:scale = (1.133253, 1.133253, 1.133253)
+            double3 xformOp:translate = (3.5, 0, -5.6)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "FairyRing_Mushroom_07" (
+            customData = {
+                string role = "fairy_ring"
+            }
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 333.3479
+            float3 xformOp:scale = (0.91643524, 0.91643524, 0.91643524)
+            double3 xformOp:translate = (4.2778174593052025, 0, -5.2778174593052025)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "BirdNest_perched" (
+            customData = {
+                string perched_on = "PerimeterTree_01"
+                string wildlife = "nest"
+            }
+            prepend references = @./assets/BirdNest.usda@</BirdNest>
+        )
+        {
+            float xformOp:rotateY = 20
+            double3 xformOp:translate = (-2.1, 2.8, 6.5)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY"]
+        }
+    }
+
+    def Xform "Zone_Rocky"
+    {
+        def Xform "DeadTree_00" (
+            customData = {
+                string role = "dead_cluster"
+            }
+            prepend references = @./assets/DeadTree.usda@</DeadTree>
+        )
+        {
+            float xformOp:rotateY = 156.60394
+            float xformOp:rotateZ = 6.0180025
+            float3 xformOp:scale = (1.0616659, 1.0616659, 1.0616659)
+            double3 xformOp:translate = (15, 0, -8)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "DeadTree_01" (
+            customData = {
+                string role = "dead_cluster"
+            }
+            prepend references = @./assets/DeadTree.usda@</DeadTree>
+        )
+        {
+            float xformOp:rotateY = 337.37045
+            float xformOp:rotateZ = -7.818703
+            float3 xformOp:scale = (1.1937891, 1.1937891, 1.1937891)
+            double3 xformOp:translate = (16.2, 0, -7.2)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "DeadTree_02" (
+            customData = {
+                string role = "dead_cluster"
+            }
+            prepend references = @./assets/DeadTree.usda@</DeadTree>
+        )
+        {
+            float xformOp:rotateY = 72.74204
+            float xformOp:rotateZ = 2.0176225
+            float3 xformOp:scale = (0.9273578, 0.9273578, 0.9273578)
+            double3 xformOp:translate = (14.5, 0, -7)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Birch_00" (
+            customData = {
+                string variant = "standard"
+            }
+            prepend references = @./assets/TreeBirch.usda@</TreeBirch>
+        )
+        {
+            float xformOp:rotateY = 301.77484
+            float xformOp:rotateZ = 1.0980724
+            float3 xformOp:scale = (1.0162448, 1.0162448, 1.0162448)
+            double3 xformOp:translate = (11.530206330039547, 0, 11.488732788712888)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Birch_01" (
+            customData = {
+                string variant = "dark"
+            }
+            prepend references = @./assets/TreeBirch.usda@</TreeBirch>
+        )
+        {
+            float xformOp:rotateY = 303.10593
+            float xformOp:rotateZ = 0.45484838
+            float3 xformOp:scale = (0.996922, 0.996922, 0.996922)
+            double3 xformOp:translate = (15.15552628180981, 0, -10.974423344510337)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+
+            over "Materials"
+            {
+                over "Mat_Foliage"
+                {
+                    over "Surface"
+                    {
+                        color3f inputs:diffuseColor = (0.25, 0.4, 0.18)
+                    }
+                }
+            }
+        }
+
+        def Xform "Birch_02" (
+            customData = {
+                string variant = "standard"
+            }
+            prepend references = @./assets/TreeBirch.usda@</TreeBirch>
+        )
+        {
+            float xformOp:rotateY = 22.425028
+            float xformOp:rotateZ = 0.9068463
+            float3 xformOp:scale = (1.1495253, 1.1495253, 1.1495253)
+            double3 xformOp:translate = (15.851833201095143, 0, 4.559063928535792)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Birch_03" (
+            customData = {
+                string variant = "dark"
+            }
+            prepend references = @./assets/TreeBirch.usda@</TreeBirch>
+        )
+        {
+            float xformOp:rotateY = 287.13852
+            float xformOp:rotateZ = 0.22379968
+            float3 xformOp:scale = (1.105251, 1.105251, 1.105251)
+            double3 xformOp:translate = (14.548377233295444, 0, 0.5949560423618863)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+
+            over "Materials"
+            {
+                over "Mat_Foliage"
+                {
+                    over "Surface"
+                    {
+                        color3f inputs:diffuseColor = (0.25, 0.4, 0.18)
+                    }
+                }
+            }
+        }
+
+        def Xform "Birch_04" (
+            customData = {
+                string variant = "standard"
+            }
+            prepend references = @./assets/TreeBirch.usda@</TreeBirch>
+        )
+        {
+            float xformOp:rotateY = 283.39166
+            float xformOp:rotateZ = -0.39969075
+            float3 xformOp:scale = (1.1733397, 1.1733397, 1.1733397)
+            double3 xformOp:translate = (15.364736530756556, 0, 9.286438600652588)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:rotateZ", "xformOp:scale"]
+        }
+
+        def Xform "Cairn_Stone_00" (
+            customData = {
+                string role = "cairn"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 18.831923
+            float3 xformOp:scale = (1.4, 1.4, 1.4)
+            double3 xformOp:translate = (14, 0, 4)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Cairn_Stone_01" (
+            customData = {
+                string role = "cairn"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 215.42355
+            double3 xformOp:translate = (14.6, 0, 4.3)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY"]
+        }
+
+        def Xform "Cairn_Stone_02" (
+            customData = {
+                string role = "cairn"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 170.06836
+            float3 xformOp:scale = (1.1, 1.1, 1.1)
+            double3 xformOp:translate = (13.5, 0, 4.4)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Cairn_Stone_03" (
+            customData = {
+                string role = "cairn"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 312.33835
+            double3 xformOp:translate = (14.1, 0, 3.5)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY"]
+        }
+
+        def Xform "Cairn_Stone_04" (
+            customData = {
+                string role = "cairn"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 170.30919
+            float3 xformOp:scale = (0.9, 0.9, 0.9)
+            double3 xformOp:translate = (14.2, 0.55, 4.1)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Cairn_Stone_05" (
+            customData = {
+                string role = "cairn"
+            }
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 43.30408
+            float3 xformOp:scale = (0.75, 0.75, 0.75)
+            double3 xformOp:translate = (13.9, 1.05, 4.05)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog" (
+            customData = {
+                string role = "hollow_log"
+            }
+            prepend references = @./assets/FallenLog.usda@</FallenLog>
+        )
+        {
+            float xformOp:rotateY = 35
+            float3 xformOp:scale = (1.1, 1.1, 1.1)
+            double3 xformOp:translate = (12.5, 0, -3)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Moss_00" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 344.6787
+            float3 xformOp:scale = (0.8585287, 0.8585287, 0.8585287)
+            double3 xformOp:translate = (13.788459588688774, 0, -2.4206191497333975)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Moss_01" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 74.73744
+            float3 xformOp:scale = (1.2917244, 1.2917244, 1.2917244)
+            double3 xformOp:translate = (12.107381079768265, 0, -3.439107028897456)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Moss_02" (
+            prepend references = @./assets/Moss.usda@</Moss>
+        )
+        {
+            float xformOp:rotateY = 43.652935
+            float3 xformOp:scale = (1.1440033, 1.1440033, 1.1440033)
+            double3 xformOp:translate = (12.65040106615216, 0, -2.7040510176544714)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Mushroom_00" (
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 141.75334
+            float3 xformOp:scale = (1.2331438, 1.2331438, 1.2331438)
+            double3 xformOp:translate = (12.566050925397112, 0, -3.178657416945664)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Mushroom_01" (
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 252.42218
+            float3 xformOp:scale = (1.0126839, 1.0126839, 1.0126839)
+            double3 xformOp:translate = (12.842364116888053, 0, -2.6225538683033984)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Mushroom_02" (
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 152.14224
+            float3 xformOp:scale = (1.07189, 1.07189, 1.07189)
+            double3 xformOp:translate = (12.038599462823951, 0, -3.0830420557902842)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Mushroom_03" (
+            prepend references = @./assets/Mushroom.usda@</Mushroom>
+        )
+        {
+            float xformOp:rotateY = 135.32574
+            float3 xformOp:scale = (1.0419257, 1.0419257, 1.0419257)
+            double3 xformOp:translate = (12.338047221915664, 0, -3.4926933342527606)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "HollowLog_Fern" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 77.44779
+            float3 xformOp:scale = (1.1, 1.1, 1.1)
+            double3 xformOp:translate = (13.9, 0, -3.4)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockBig_00" (
+            prepend references = @./assets/RockBig.usda@</RockBig>
+        )
+        {
+            float xformOp:rotateY = 70.03302
+            float3 xformOp:scale = (0.8143894, 0.8143894, 0.8143894)
+            double3 xformOp:translate = (12.306936513626212, -0.2, -9.867156948604201)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockBig_01" (
+            prepend references = @./assets/RockBig.usda@</RockBig>
+        )
+        {
+            float xformOp:rotateY = 259.84457
+            float3 xformOp:scale = (0.7803973, 0.7803973, 0.7803973)
+            double3 xformOp:translate = (9.792205889521453, 0, -7.780552049765795)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockBig_02" (
+            prepend references = @./assets/RockBig.usda@</RockBig>
+        )
+        {
+            float xformOp:rotateY = 300.09378
+            float3 xformOp:scale = (1.2222822, 1.2222822, 1.2222822)
+            double3 xformOp:translate = (9.917786034256107, -0.2, -10.88969917132587)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockBig_03" (
+            prepend references = @./assets/RockBig.usda@</RockBig>
+        )
+        {
+            float xformOp:rotateY = 273.89618
+            float3 xformOp:scale = (1.3110238, 1.3110238, 1.3110238)
+            double3 xformOp:translate = (12.361387826156959, 0, 7.426678967590341)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockSmall_00" (
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 88.97192
+            float3 xformOp:scale = (0.82564104, 0.82564104, 0.82564104)
+            double3 xformOp:translate = (9.55158820164026, 0, 8.775164388925948)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockSmall_01" (
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 97.27024
+            float3 xformOp:scale = (1.1795353, 1.1795353, 1.1795353)
+            double3 xformOp:translate = (11.258717288468727, 0, 2.739628971826223)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockSmall_02" (
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 98.56466
+            float3 xformOp:scale = (0.9810664, 0.9810664, 0.9810664)
+            double3 xformOp:translate = (18.103793961570744, 0, 1.5778686279299095)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockSmall_03" (
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 289.43436
+            float3 xformOp:scale = (0.89764327, 0.89764327, 0.89764327)
+            double3 xformOp:translate = (16.667832937055966, 0, -8.90743083967697)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockSmall_04" (
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 201.09479
+            float3 xformOp:scale = (0.50761545, 0.50761545, 0.50761545)
+            double3 xformOp:translate = (15.181291667390807, 0, -2.3070525964745627)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "RockSmall_05" (
+            prepend references = @./assets/RockSmall.usda@</RockSmall>
+        )
+        {
+            float xformOp:rotateY = 15.455169
+            float3 xformOp:scale = (0.81348646, 0.81348646, 0.81348646)
+            double3 xformOp:translate = (17.839022890918756, 0, 11.52359206368865)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_00" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 18.314486
+            float3 xformOp:scale = (1.0134612, 1.0134612, 1.0134612)
+            double3 xformOp:translate = (18.437961511927003, 0, -1.351512414009651)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_01" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 163.07176
+            float3 xformOp:scale = (0.7647412, 0.7647412, 0.7647412)
+            double3 xformOp:translate = (18.705233217690385, 0, -11.069023602002705)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+
+        def Xform "Fern_02" (
+            prepend references = @./assets/Fern.usda@</Fern>
+        )
+        {
+            float xformOp:rotateY = 30.104097
+            float3 xformOp:scale = (0.67725784, 0.67725784, 0.67725784)
+            double3 xformOp:translate = (12.056290701084421, 0, -6.2809255679593115)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY", "xformOp:scale"]
+        }
+    }
+}
+
